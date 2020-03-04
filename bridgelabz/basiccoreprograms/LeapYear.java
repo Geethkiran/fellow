@@ -18,6 +18,7 @@ public class LeapYear {
 		logger.info("logger name "+logger.getName());
 		logger.warn("can cause NumberFormatException");
 		System.out.println("enter year");
+	
 		int year= InputUtility.getInt();
 		try {
 			if (Utility.isYearLeapYear(year) == true) {
@@ -25,8 +26,6 @@ public class LeapYear {
 			}else 
 					System.out.println(year +" is not a leapyear");
 		} catch (UserDefinedException e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
 			logger.error(e);
 		}
 		}
